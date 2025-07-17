@@ -52,16 +52,16 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-family: 'Iosevka', monospace;
   font-size: 18px;
 }
 
 /* Window */
 window {
-  margin: 0px;
+  margin: 10px;
   padding: 10px;
   border: 2px solid @lavender;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: @base;
 }
 

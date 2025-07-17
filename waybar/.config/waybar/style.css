@@ -1,7 +1,7 @@
 @import "mocha.css"; 
 
 * {
-    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-family: "Iosevka";
     font-size: 16px;
     min-height: 0;
     font-weight: bold;
@@ -9,11 +9,11 @@
 
 window#waybar {
     background: transparent;
-    background-color: @crust;
-    color: @overlay0;
+    background-color: transparent;
+    color: @flamingo;
     transition-property: background-color;
     transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
+   /* border-bottom: 1px solid @overlay1;*/
 }
 
 #window {
@@ -31,23 +31,27 @@ button {
 button:hover {
     background: inherit;
     color: @mauve;
-    border-top: 2px solid @mauve;
+    border: 2px solid @mauve;
+    border-radius: 8px;
 }
 
 #workspaces button {
     padding: 0 4px;
+    color: #a89db5;
 }
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
     color: @rosewater;
-    border-top: 2px solid @rosewater;
+    border: 2px solid @rosewater;
+    border-radius: 8px;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: @mauve;
-    border-top: 2px solid @mauve;
+    border: 2px solid @mauve;
+    border-radius: 8px;
 }
 
 #workspaces button.urgent {
@@ -75,24 +79,40 @@ button:hover {
   padding-right: 4px;
 }
 
+#temperature {
+    color: @sky;
+    border: 2px solid @sky;
+    border-radius: 8px;
+}
+
+#memory {
+    color: @green;
+    border: 2px solid @green;
+    border-radius: 8px;
+}
+
 #clock {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
+    border: 2px solid @maroon;
+    border-radius: 8px;
 }
 
 #clock.date {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    border: 2px solid @mauve;
+    border-radius: 8px;
 }
 
 #pulseaudio {
     color: @blue;
-    border-bottom: 2px solid @blue;
+    border: 2px solid @blue;
+    border-radius: 8px;
 }
 
 #network {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
+    border: 2px solid @yellow;
+    border-radius: 8px;
 }
 
 #idle_inhibitor {
